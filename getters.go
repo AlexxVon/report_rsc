@@ -542,8 +542,8 @@ func getReportDocPeriod(date_start, date_end string) {
 
 	listAll := getEventAll()
 
-	var listDoc [7][7]string
-	var count_docs [5]int
+	var listDoc [8][7]string
+	var count_docs [6]int
 	var count_actions [6]int
 
 	for i := 0; i < 1; i++ {
@@ -723,7 +723,7 @@ func getReportDoc(date_start, date_end string) {
 
 }
 
-func showReport(arr [7][7]string, ds, de string) {
+func showReport(arr [8][7]string, ds, de string) {
 	win := a.NewWindow("report")
 
 	d_start := canvas.NewText("Отчет деятельности нейрохирургов РСЦ с ", color.Opaque)
@@ -910,3 +910,4 @@ func showList(rep []Report, doc, date string) {
 	mod.Show()
 
 }
+
